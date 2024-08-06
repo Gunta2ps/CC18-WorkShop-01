@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    max-width: 1200px;
+    background-color: lightblue;
+    height: 100vh;
+}
+
+.container{
+ display:flex;
+ margin: 0 auto;
+ width: 80%;
+ justify-content: space-between;
+ align-items: flex-end;
+}
+
+header{
+    min-height: 100px;
+    border-bottom: 3px solid orangered;
+    display: flex;
+}
+
+.branding h1 span{
+    color: deeppink;
+}
+
+.branding h1 {
+    color: white;
+}
+
+nav{
+    display: flex;
+}
+
+ul{
+    display: flex;
+    align-items: flex-end;
+}
+
+li{
+    list-style: none;
+    padding: 8px;
+}
+
+header a:hover{
+    color: slateblue;
+    font-weight: 800;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+.current{
+    background-color: deeppink;
+}
+
+.showcase{
+    background: url("https://picsum.photos/id/2/1500/500/?blur=4");
+    height: 500px;
+    display: flex;
+}
+
+.showcase .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+}
+
+.showcase .container h1{
+    color: white;
+    font-size: 55px;
+    margin-bottom: 50px;
+}
+
+.showcase .container p{
+    color: deeppink;
+    font-size: 20px;
+    width: 60%;
+}
+
+.newsletter{
+    background-color:lightskyblue;
+    height: 50px;
+    display: flex;
+}
+
+.newsletter .container{
+    display: flex;
+    align-items: center;
+}
+
+.newsletter .container h1{
+    color: orangered;
+}
+
+.newsletter .container input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    width: 250px;
+}
+
+.newsletter .container button{
+    background-color: orangered;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    padding-inline: 16px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.boxes {
+    margin-top: 20px;
+}
+
+.boxes .container {
+    justify-content: space-between;
+}
+
+.boxes .container .box{
+    text-align: center;
+    padding: 16px;
+}
+
+.boxes .container .box img{
+    height: 120px;
+}
+
+footer{
+    background-color: lightskyblue;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: -100;
+    width: 100%;
+}
+
+@media(max-width: 900px){
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    .newsletter{
+        flex-wrap: wrap;
+        height: 140px;
+    }
+
+    .newsletter .container input{
+        width: 80vw;
+        margin: 10px;
+    }
+
+    .newsletter .container button{
+        width: 80vw;
+        margin: 10px;
+    }
+}
